@@ -18,7 +18,7 @@ import '@/app/styles/index.css';
 export default async function IndexPage(){
   const payload = await getPayload({ config });
   const content = await payload.findGlobal({ slug: 'index' });
-  if (!content.overlay.title) return <ErrorPage />;
+  if (!content) return <ErrorPage />;
 
   return (
     <main>

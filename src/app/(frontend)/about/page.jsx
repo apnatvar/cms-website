@@ -17,7 +17,7 @@ import "@/app/styles/about.css";
 export default async function About() {
   const payload = await getPayload({ config });
   const content = await payload.findGlobal({ slug: 'about' });
-  if (!content.hero.title) return <ErrorPage />;
+  if (!content) return <ErrorPage />;
 
   return (
     <main>
