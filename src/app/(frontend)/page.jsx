@@ -30,7 +30,7 @@ export default async function IndexPage(){
       <IndexHeroSection heroContent={content.hero} />
       <IndexTrailerSection trailerContent={content.trailers}/>
       <IndexMapSection mapContent={content.map}/>
-      <IndexGIFSection gifImage={content.gifImage} />
+      <IndexGIFSection gifImage={content.GIFImage} />
       <IndexWorkSummarySection workSummaryContent={content.workSummary}/>
       <IndexQuoteImageSection quoteImage={content.quoteImage} />
       <IndexTestimonialsSection testimonialsContent={content.testimonials}/>

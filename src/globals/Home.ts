@@ -118,5 +118,36 @@ export const LandingPage: GlobalConfig = {
         },
       ],
     },
+    {
+      name: 'testimonials',
+      type: 'group',
+      fields: [
+        { name: 'title', type: 'text' },
+        { name: 'subtitle', type: 'text' },
+        {
+          name: 'reviews',
+          type: 'array',
+          fields: [
+            { name: 'author', type: 'text' },
+            { name: 'designation', type: 'text' },
+            { name: 'review', type: 'textarea' },
+            { name: 'image', type: 'upload', relationTo: 'media' },
+          ],
+        },
+      ],
+    },
+    {
+      name: 'quoteImage',
+      type: 'group',
+      fields: [{ name: 'image', type: 'upload', relationTo: 'media' }],
+    },
+    {
+      name: 'GIFImage',
+      type: 'group',
+      fields: [
+        { name: 'image', type: 'upload', relationTo: 'media' },
+        { name: 'caption', type: 'text' },
+      ],
+    },
   ],
 }
