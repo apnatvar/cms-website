@@ -11,6 +11,7 @@ import IndexQuoteImageSection from '@/components/indexQuote';
 import IndexGIFSection from '@/components/indexSmallGIF';
 import ErrorPage from '@/components/errorPage';
 import Footer from '@/components/footer';
+import SocialBar from '@/components/socialBar';
 
 import { getPayload } from "payload";
 import config from "@/payload.config";
@@ -35,6 +36,7 @@ export default async function IndexPage(){
       <IndexQuoteImageSection quoteImage={content.quoteImage} />
       <IndexTestimonialsSection testimonialsContent={content.testimonials}/>
       <IndexStatsSection statsContent={content.presentStatistic}/>
+      <SocialBar />
       <Footer />
     </main>
   );

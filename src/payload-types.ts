@@ -91,12 +91,14 @@ export interface Config {
     about: About;
     'blog-page': BlogPage;
     footer: Footer;
+    links: Link;
   };
   globalsSelect: {
     index: IndexSelect<false> | IndexSelect<true>;
     about: AboutSelect<false> | AboutSelect<true>;
     'blog-page': BlogPageSelect<false> | BlogPageSelect<true>;
     footer: FooterSelect<false> | FooterSelect<true>;
+    links: LinksSelect<false> | LinksSelect<true>;
   };
   locale: null;
   user: User & {
@@ -534,6 +536,20 @@ export interface Footer {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "links".
+ */
+export interface Link {
+  id: number;
+  Facebook: string;
+  Instagram: string;
+  Twitter: string;
+  Whatsapp: string;
+  Youtube: string;
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "index_select".
  */
 export interface IndexSelect<T extends boolean = true> {
@@ -744,6 +760,20 @@ export interface FooterSelect<T extends boolean = true> {
         link?: T;
         id?: T;
       };
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "links_select".
+ */
+export interface LinksSelect<T extends boolean = true> {
+  Facebook?: T;
+  Instagram?: T;
+  Twitter?: T;
+  Whatsapp?: T;
+  Youtube?: T;
   updatedAt?: T;
   createdAt?: T;
   globalType?: T;

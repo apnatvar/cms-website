@@ -344,3 +344,21 @@
       font-size: 0.85rem;
     }
   }
+
+  .social-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem 0;
+  }
+
+  .social-bar a {
+    color: var(--preferred-black);
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+
+  .social-bar a:hover {
+    color: var(--preferred-red); /* red accent */
+  }
