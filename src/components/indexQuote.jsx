@@ -10,6 +10,7 @@ export default function IndexQuoteImageSection({ quoteImage }) {
                 alt={quoteImage?.image?.alt || "Quote"}
                 width={100}
                 height={100}
+                layout="responsive"
             />
         </section>
     )

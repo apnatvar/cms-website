@@ -7,7 +7,6 @@ export default function IndexMapSection({ mapContent }) {
                 <h2 className="text">{mapContent?.sectionHeader}</h2>
             </div>
             <div className="map-and-international-wrapper">
-                {/* LEFT: India Map + Textbox Below */}
                 <div className="map-column">
                     <div className="svg-section">
                         <img src="/india.svg" alt="Map of India" className="india-map" />
@@ -18,7 +17,6 @@ export default function IndexMapSection({ mapContent }) {
                         <p className="paragraph">{mapContent?.mapParagraph}</p>
                     </div>
                 </div>
-                {/* RIGHT: 3 International Images with Hover Text */}
                 <div className="international-column">
                     {generateInternationalCards(mapContent?.highlightImages)}
                 </div>

@@ -10,6 +10,7 @@ export default function IndexGIFSection({ gifImage }) {
                 alt={gifImage?.image?.alt || "Cute GIF"}
                 width={100}
                 height={100}
+                layout="responsive"
             />
         </section>
     )
