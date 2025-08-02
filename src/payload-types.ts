@@ -419,6 +419,26 @@ export interface Index {
         }[]
       | null;
   };
+  testimonials?: {
+    title?: string | null;
+    subtitle?: string | null;
+    reviews?:
+      | {
+          author?: string | null;
+          designation?: string | null;
+          review?: string | null;
+          image?: (number | null) | Media;
+          id?: string | null;
+        }[]
+      | null;
+  };
+  quoteImage?: {
+    image?: (number | null) | Media;
+  };
+  GIFImage?: {
+    image?: (number | null) | Media;
+    caption?: string | null;
+  };
   updatedAt?: string | null;
   createdAt?: string | null;
 }
@@ -597,6 +617,32 @@ export interface IndexSelect<T extends boolean = true> {
               value?: T;
               id?: T;
             };
+      };
+  testimonials?:
+    | T
+    | {
+        title?: T;
+        subtitle?: T;
+        reviews?:
+          | T
+          | {
+              author?: T;
+              designation?: T;
+              review?: T;
+              image?: T;
+              id?: T;
+            };
+      };
+  quoteImage?:
+    | T
+    | {
+        image?: T;
+      };
+  GIFImage?:
+    | T
+    | {
+        image?: T;
+        caption?: T;
       };
   updatedAt?: T;
   createdAt?: T;

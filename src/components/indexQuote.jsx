@@ -6,9 +6,8 @@ export default function IndexQuoteImageSection({ quoteImage }) {
     return (
         <section className="index-quote-image">
             <Image
-                src={quoteImage.src}
-                alt={quoteImage.alt || "Quote"}
-                layout="responsive"
+                src={quoteImage?.image?.url}
+                alt={quoteImage?.image?.alt || "Quote"}
                 width={100}
                 height={100}
             />

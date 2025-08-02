@@ -17,8 +17,8 @@ export default function IndexTestimonialsSection({ testimonialsContent }) {
   return (
     <section className="index-testimonials">
       <div className="header">
-        <p className="subheading">{testimonialsContent?.subheading}</p>
-        <h2 className="heading">{testimonialsContent?.heading}</h2>
+        <p className="subheading">{testimonialsContent?.subtitle}</p>
+        <h2 className="heading">{testimonialsContent?.title}</h2>
       </div>
 
       <div className="review-card">
