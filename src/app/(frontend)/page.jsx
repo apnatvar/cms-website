@@ -6,6 +6,9 @@ import IndexWorkSummarySection from '@/components/indexWorkSummary';
 import IndexStatsSection from '@/components/indexStats';
 import IndexMapSection from '@/components/indexMapSection';
 import IndexTrailerSection from '@/components/indexTrailerSection';
+import IndexTestimonialsSection from '@/components/indexTestimonials';
+import IndexQuoteImageSection from '@/components/indexQuote';
+import IndexGIFSection from '@/components/indexSmallGIF';
 import ErrorPage from '@/components/errorPage';
 import Footer from '@/components/footer';
 
@@ -27,7 +30,10 @@ export default async function IndexPage(){
       <IndexHeroSection heroContent={content.hero} />
       <IndexTrailerSection trailerContent={content.trailers}/>
       <IndexMapSection mapContent={content.map}/>
+      <IndexGIFSection gifImage={content.gifImage} />
       <IndexWorkSummarySection workSummaryContent={content.workSummary}/>
+      <IndexQuoteImageSection quoteImage={content.quoteImage} />
+      <IndexTestimonialsSection testimonialsContent={content.testimonials}/>
       <IndexStatsSection statsContent={content.presentStatistic}/>
       <Footer />
     </main>

@@ -34,6 +34,6 @@ export default function IndexStatsSection({ statsContent }) {
                 <div className="stat-number">{item?.value}</div>
                 <div className="stat-label">{item?.label}</div>
             </div>
-        ))        
+        ));    
     }
 }

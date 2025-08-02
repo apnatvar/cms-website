@@ -1,9 +1,13 @@
-import { GlobalConfig } from 'payload';
+import { GlobalConfig } from 'payload'
+import { VercelRedeployHook } from '@/hooks/vercelRedeployHook'
 
 export const BlogPage: GlobalConfig = {
   slug: 'blog-page',
   access: {
     read: () => true,
+  },
+  hooks: {
+    afterChange: [() => VercelRedeployHook()],
   },
   fields: [
     { name: 'heading', type: 'text', required: true },
@@ -11,4 +15,4 @@ export const BlogPage: GlobalConfig = {
     { name: 'image', type: 'upload', relationTo: 'media', required: true },
     { name: 'video', type: 'upload', relationTo: 'media', required: true },
   ],
-};
+}
