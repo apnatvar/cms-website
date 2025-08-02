@@ -40,6 +40,11 @@ export default buildConfig({
     },
   }),
   sharp,
+  upload: {
+    limits: {
+      fileSize: 5000000000, // 5GB, written in bytes
+    },
+  },
   plugins: [
     payloadCloudPlugin(),
     s3Storage({
