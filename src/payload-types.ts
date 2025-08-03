@@ -522,15 +522,11 @@ export interface BlogPage {
  */
 export interface Footer {
   id: number;
-  mainText: string;
+  copyright: string;
   logo?: (number | null) | Media;
-  links?:
-    | {
-        placeholder: string;
-        link: string;
-        id?: string | null;
-      }[]
-    | null;
+  address?: string | null;
+  phone?: string | null;
+  email?: string | null;
   updatedAt?: string | null;
   createdAt?: string | null;
 }
@@ -751,15 +747,11 @@ export interface BlogPageSelect<T extends boolean = true> {
  * via the `definition` "footer_select".
  */
 export interface FooterSelect<T extends boolean = true> {
-  mainText?: T;
+  copyright?: T;
   logo?: T;
-  links?:
-    | T
-    | {
-        placeholder?: T;
-        link?: T;
-        id?: T;
-      };
+  address?: T;
+  phone?: T;
+  email?: T;
   updatedAt?: T;
   createdAt?: T;
   globalType?: T;

@@ -10,15 +10,10 @@ export const Footer: GlobalConfig = {
     afterChange: [() => VercelRedeployHook()],
   },
   fields: [
-    { name: 'mainText', type: 'text', required: true, defaultValue: '© 2023 BalaG Studios' },
+    { name: 'copyright', type: 'text', required: true, defaultValue: '© 2025 BalaG Studios' },
     { name: 'logo', type: 'upload', relationTo: 'media' },
-    {
-      name: 'links',
-      type: 'array',
-      fields: [
-        { name: 'placeholder', type: 'text', required: true },
-        { name: 'link', type: 'text', required: true },
-      ],
-    },
+    { name: 'address', type: 'textarea' },
+    { name: 'phone', type: 'text' },
+    { name: 'email', type: 'text' },
   ],
 }

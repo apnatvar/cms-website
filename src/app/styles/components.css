@@ -170,6 +170,11 @@
     align-items: center;
   }
 
+  .footer .address {
+    color: var(--preferred-white);
+    text-align: justify;
+  }
+
   .footer .footer-content .owner-text {
     margin: 0.5rem 0;
     max-width: 600px;
@@ -185,11 +190,11 @@
   }
 
   .footer .list-content {
-    color: var(--preferred-white);
     text-decoration: none;
+    color: var(--preferred-white);
   }
 
-  .footer .footer-links .link:hover {
+  .footer .list-content:hover {
     color: var(--preferred-red);
   }
 

@@ -10,9 +10,9 @@ export default async function Footer() {
   return (
     <footer className="footer">
       <div className='footer-content contact-info'>
-        <p className='address'>sdakfnjsnafjsafsdf{content?.address}</p>
-        <p className='phone'>fasdlfjlkasnflsnafnsajkf{content?.phone}</p>
-        <p className='email'>sdakfnjsnafjsafsdf{content?.email}</p>
+        <p className='address'>{content?.address}</p>
+        <p className='phone'><Link href={`tel:${content?.phone}`} className='list-content'>{content?.phone}</Link></p>
+        <p className='email'><Link href={`mailto:${content?.email}`} className='list-content'>{content?.email}</Link></p>
       </div>
       <div className="footer-content logo-image">
         <Image
@@ -21,7 +21,7 @@ export default async function Footer() {
           width={100}
           height={100}
         />
-        <p className='main-text'>{content?.mainText}</p>
+        <p className='main-text'>{content?.copyright}</p>
         {/* <p className='owner-text'>Made with ❤️ by <Link href="https://example.com" className='owner-link'>BrownSmith Dynamics</Link></p> */}
       </div>
       <div className='footer-content links'>        
