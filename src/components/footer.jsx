@@ -9,7 +9,12 @@ export default async function Footer() {
   const content = await payload.findGlobal({ slug: 'footer' });
   return (
     <footer className="footer">
-      <div className="footer-content">
+      <div className='footer-content contact-info'>
+        <p className='address'>sdakfnjsnafjsafsdf{content?.address}</p>
+        <p className='phone'>fasdlfjlkasnflsnafnsajkf{content?.phone}</p>
+        <p className='email'>sdakfnjsnafjsafsdf{content?.email}</p>
+      </div>
+      <div className="footer-content logo-image">
         <Image
           src={content?.logo?.url}
           alt={content?.logo?.alt}
@@ -19,19 +24,14 @@ export default async function Footer() {
         <p className='main-text'>{content?.mainText}</p>
         {/* <p className='owner-text'>Made with ❤️ by <Link href="https://example.com" className='owner-link'>BrownSmith Dynamics</Link></p> */}
       </div>
-      <div className="footer-links">
-        <ul className="links-container">
-          {renderLinks(content?.links)}
+      <div className='footer-content links'>        
+        <ul className='footer-link-list'>
+        <li><Link href="/" className="list-content">Home</Link></li>
+        <li><Link href="/about" className="list-content">About Us</Link></li>
+        <li><Link href="/blog" className="list-content">Blog</Link></li>
         </ul>
       </div>
     </footer>
   );
-
-  function renderLinks(links) {
-    if (!Array.isArray(links) || links.length === 0) return null
-    return links.map((item, index) => (
-      <li key={index}><Link href={item?.link} className='link' target='_blank'>{item?.placeholder}</Link></li>
-    ))
-  }
 };
 

@@ -158,8 +158,10 @@
     background-color: var(--preferred-black);
     color: var(--preferred-white);
     padding: 2rem 1rem;
-    text-align: center;
     margin: 0;
+    display: flex;
+    width: 100%;
+    align-content: center;
   }
 
   .footer .footer-content {
@@ -182,17 +184,9 @@
     text-decoration: underline;
   }
 
-  .footer .footer-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.75rem;
-  }
-
-  .footer .footer-links .link {
+  .footer .list-content {
     color: var(--preferred-white);
     text-decoration: none;
-    font-weight: 500;
   }
 
   .footer .footer-links .link:hover {
