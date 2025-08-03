@@ -1,12 +1,15 @@
 import React from "react";
 import SideMenu from "@/components/sideMenu";
 import { headers } from 'next/headers';
+import SocialBar from "@/components/socialBar";
+import Footer from "@/components/footer";
 import ErrorPage from '@/components/errorPage';
 
 import { getPayload } from 'payload';
 import config from '@/payload.config';
 
 import '@/app/styles/blog.css'; 
+import '@/app/styles/global.css';
 
 export default async function BlogPost() {
   const requestHeaders = await headers();
@@ -54,6 +57,8 @@ export default async function BlogPost() {
           <img src={post.image4?.url} alt={post.image4?.alt}/>
         </section>
       </article>
+      <SocialBar />
+      <Footer />
     </main>
   );
 }

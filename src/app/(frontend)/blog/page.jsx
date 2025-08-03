@@ -2,6 +2,8 @@ import React from "react";
 import Link from 'next/link';
 
 import SideMenu from "@/components/sideMenu";
+import SocialBar from "@/components/socialBar";
+import Footer from "@/components/footer";
 import ErrorPage from '@/components/errorPage';
 
 import '@/app/styles/blog.css'; 
@@ -26,6 +28,8 @@ export default async function BlogPage() {
           {generateBlogCards(blogs.docs)}
         </div>
       </section>
+      <SocialBar />
+      <Footer />
     </main>
   );
 

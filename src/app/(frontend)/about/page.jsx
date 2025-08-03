@@ -6,6 +6,7 @@ import AboutFounderSection from '@/components/aboutFounder';
 import AboutOurStorySection from '@/components/aboutOurStory';
 import AboutTeamSection from '@/components/aboutTeamMembers';
 import AboutReviewsSection from '@/components/aboutReviews';
+import SocialBar from "@/components/socialBar";
 import ErrorPage from '@/components/errorPage';
 
 import { getPayload } from "payload";
@@ -27,6 +28,7 @@ export default async function About() {
       <AboutOurStorySection storyContent={content.story} />
       <AboutTeamSection teamContent={content.team} />
       <AboutReviewsSection reviewContent={content.reviews} />
+      <SocialBar />
       <Footer />
     </main>
   );
