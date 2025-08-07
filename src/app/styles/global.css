@@ -1,7 +1,9 @@
   :root {
-    --preferred-red: #b63232;
-    --preferred-black: #2b2b2b;
-    --preferred-white: #f8f6f0;
+    --preferred-red: #ee3632;
+    --secondary-red: #fe5c5c;
+    --preferred-black: #0b0a09;
+    --preferred-white: #f9f9f9;
+    --secondary-white: #f7f7f5;
   }
 
   * {
@@ -29,7 +31,6 @@
   */
   body {
     line-height: 1.6;
-    color: var(--preferred-red);
     width: 100%;
   }
 

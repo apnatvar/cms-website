@@ -86,14 +86,14 @@
   .work-summary .pinstripe {
     width: 40%;
     height: 2px;
-    background-color: var(--preferred-red);
+    background-color: var(--secondary-red);
     margin-bottom: 1rem;
     z-index: 1;
   }
   
   .work-summary .subheading {
     font-size: 1.2rem;
-    color: var(--preferred-red);
+    color: var(--secondary-red);
     z-index: 1;
   }
   
@@ -103,7 +103,6 @@
     position: relative;
     height: 100vh;
     overflow: hidden;
-    color: var(--preferred-red);
   }
 
   .stats-section .bg-video {
@@ -148,11 +147,13 @@
   .stats-section .left-text .heading {
     font-size: 2rem;
     margin-bottom: 0.5rem;
+    color: var(--preferred-red);
   }
 
   .stats-section .left-text .paragraph {
     font-size: 1.2rem;
     line-height: 1.4;
+    color: var(--preferred-black);
   }
 
   /* Right side stats */
@@ -170,11 +171,13 @@
   .stats-section .right-text .stat-number {
     font-size: 2.5rem;
     font-weight: bold;
+    color: var(--preferred-black);
   }
 
   .stats-section .right-text .stat-label {
     font-size: 0.95rem;
     opacity: 0.85;
+    color: var(--secondary-white);
   }
 
   @media (max-width: 650px) {
@@ -209,8 +212,9 @@
   /**********************************************************************************************************/
 
   /* Core Section Layout */
-  .map-and-international-section{
+  .map-and-international-section {
     background: var(--preferred-white);
+    color: var(--primary-black);
   }
 
   .map-and-international-section .map-and-international-wrapper {
@@ -240,7 +244,8 @@
     margin-top: 1.5rem;
     padding: 1rem;
     background-color: var(--preferred-white);
-    border-left: 7px solid var(--preferred-red);
+    border-left: 7px solid var(--secondary-red);
+    color: var(--preferred-black);
   }
 
   .map-and-international-section .textbox .heading {
@@ -251,7 +256,6 @@
   .map-and-international-section .textbox .paragraph {
     margin: 0.5rem 0 0;
     font-size: 0.95rem;
-    color: var(--preferred-black);
   }
 
   /* RIGHT: International Column */
@@ -284,7 +288,7 @@
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
-    color: #f8f6f0;
+    color: var(--secondary-white);
     opacity: 0;
     visibility: hidden;
     display: flex;
@@ -324,12 +328,11 @@
     margin: 2rem 0 1rem;
   }
 
-  .map-and-international-section .section3-heading h2, .map-and-international-section .section3-footer .text {
+  /* .map-and-international-section .section3-heading h2, .map-and-international-section .section3-footer .text {
     display: block;
     font-size: 2rem;
     margin-top: 3rem;
-    color: var(--preferred-red);
-  }
+  } */
 
   /* Responsive adjustments */
   @media (max-width: 650px) {
@@ -378,10 +381,10 @@
   .map-and-international-section .pin-label {
     display: none;
     position: absolute;
-    background: #f8f6f0;
-    color: #2b2b2b;
+    background: var(--secondary-white);
+    color: var(--preferred-black);
     padding: 2px 6px;
-    border: 1px solid #f8f6f0;
+    border: 1px solid var(--secondary-white);
     border-radius: 4px;
     white-space: nowrap;
     font-size: 12px;
@@ -419,8 +422,8 @@
   .trailer-section .filter-btn {
     padding: 10px 20px;
     border: none;
-    background-color: var(--preferred-red);
-    color: rgb(17, 17, 17);
+    background-color: var(--preferred-black);
+    color: var(--secondary-white);
     border-radius: 20px;
     cursor: pointer;
     font-size: 14px;
@@ -430,7 +433,7 @@
   .trailer-section .filter-btn.active,
   .trailer-section .filter-btn:hover {
     background-color: var(--preferred-red);
-    color: var(--preferred-black);
+    color: var(--secondary-white);
   }
   
   /* Carousel Layout */
@@ -476,7 +479,7 @@
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
-    color: #f8f6f0;
+    color: var(--secondary-white);
     opacity: 0;
     visibility: hidden;
     display: flex;
@@ -496,8 +499,8 @@
   .trailer-section .carousel-next {
     padding: 10px 20px;
     border: none;
-    background-color: var(--preferred-red);
-    color: var(--preferred-black);
+    background-color: var(--preferred-black);
+    color: var(--secondary-white);
     border-radius: 20px;
     cursor: pointer;
     font-size: 14px;
@@ -507,7 +510,7 @@
   
   .trailer-section .carousel-next:hover {
     background-color: var(--preferred-red);
-    color: var(--preferred-black);
+    color: var(--secondary-white);
   }
   
   .trailer-section .carousel-controls {
@@ -518,10 +521,10 @@
   /**********************************************************************************************************/
 
   .index-hero {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
   }
 
   .index-hero .title {
@@ -529,7 +532,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: whitesmoke;
+    color: var(--preferred-white);
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
     font-size: 1rem;
     text-align: center;
@@ -570,7 +573,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.1);
     border: none;
     color: var(--preferred-white);
     font-size: 2rem;
@@ -581,7 +584,7 @@
   }
 
   .index-hero .nav-button:hover {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: var(--secondary-red);
   }
 
   .index-hero .nav-button.left {
@@ -601,20 +604,19 @@
   margin: 1rem auto;
   background-color: var(--preferred-black);
   border-radius: 15px;
-  color: var(--preferred-white);
+  color: var(--secondary-white);
   position: relative;
-  /* padding: 2rem 2rem; */
   overflow: hidden;
 }
 
 .index-testimonials .header {
   text-align: center;
   margin-bottom: 2rem;
+  color: var(--secondary-white);
 }
 
 .index-testimonials .subheading {
   font-size: 1rem;
-  color: var(--preferred-white);
   margin-bottom: 1rem;
   margin-top: 2rem;
 }
@@ -622,7 +624,6 @@
 .index-testimonials .heading {
   font-size: 2rem;
   font-weight: bold;
-  color:  var(--preferred-white);
 }
 
 .index-testimonials .review-card {
@@ -650,7 +651,7 @@
 .index-testimonials .review {
   font-size: 1rem;
   line-height: 1.5;
-  color:  var(--preferred-white);
+  color:  var(--secondary-white);
 }
 
 .index-testimonials .review .paragraph {
@@ -663,7 +664,7 @@
 }
 
 .index-testimonials .review .designation {
-  color: var(--preferred-red);
+  color: var(--secondary-red);
   font-size: 0.9rem;
   margin-bottom: 2rem;
 }

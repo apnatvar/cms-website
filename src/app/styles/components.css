@@ -19,13 +19,14 @@
   }
   
   .menu-toggle:hover {
-    background-color: var(--preferred-red);
+    background-color: var(--preferred-black);
+    color: var(--secondary-white);
   }
   
   .menu-list {
     margin-top: 10px;
     list-style: none;
-    background-color: var(--preferred-white); 
+    background-color: var(--secondary-white); 
     border-radius: 8px;
     padding: 10px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -44,7 +45,7 @@
   }
 
   .menu-list .list-content {
-    color: var(--preferred-red);
+    color: var(--preferred-black);
     text-decoration: none;
   }
   
