@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap');
+
   :root {
     --preferred-red: #ee3632;
     --secondary-red: #fe5c5c;
     --preferred-black: #0b0a09;
     --preferred-white: #f9f9f9;
     --secondary-white: #f7f7f5;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Montserrat', sans-serif;
   }
 
   * {
@@ -21,14 +25,16 @@
     background: transparent; 
   }
   
-  /*
-  'Lora'; is broader, suits sub-heading more
-  'Cormorant Garamond'; too skinny, maybe in the small subheading in the map section
-  'Inter'; very standard, good for large blocks of text or the buttons
-  'Raleway'; slim, lots of space, broad, seemed nice for the body of the b&w photo
-  'Work Sans'; for text on buttons and menu
-  'Bebas Neue'; need a slimmer version of this for the b&w photo 'Story+soul' thing
-  */
+  h1, h2, h3, .heading {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  }
+
+  p {
+  font-family: var(--font-body);
+  font-weight: 400;
+  }
+
   body {
     line-height: 1.6;
     width: 100%;
