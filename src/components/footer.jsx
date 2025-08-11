@@ -2,7 +2,6 @@ import React from 'react';
 import { getPayload } from 'payload';
 import config from '@/payload.config';
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default async function Footer() {
   const payload = await getPayload({ config });
@@ -15,11 +14,9 @@ export default async function Footer() {
         <p className='email'><Link href={`mailto:${content?.email}`} className='list-content'>{content?.email}</Link></p>
       </div>
       <div className="footer-content logo-image">
-        <Image
+        <img
           src={content?.logo?.url}
           alt={content?.logo?.alt}
-          width={100}
-          height={100}
         />
         <p className='main-text'>{content?.copyright}</p>
         {/* <p className='owner-text'>Made with ❤️ by <Link href="https://example.com" className='owner-link'>BrownSmith Dynamics</Link></p> */}

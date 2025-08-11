@@ -25,11 +25,9 @@ export default function IndexTestimonialsSection({ testimonialsContent }) {
         {reviews.length > 0 && (
           <div className="review-card-item">
             <div className="image-container">
-              <Image
+              <img
                 src={reviews[current]?.image?.url}
                 alt={reviews[current]?.image?.alt || "Testimonials Image"}
-                width={100}
-                height={100}
                 className="image"
               />
             </div>

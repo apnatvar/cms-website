@@ -278,6 +278,7 @@
     width: 100%;
     transition: transform 0.4s ease;
     border-radius: 8px;
+    object-fit: cover;
   }
 
   /* Hover overlay */
@@ -706,3 +707,31 @@
 }
 
   /**********************************************************************************************************/
+
+  .qoute, .gif {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .qoute .content, .gif .content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+  }  
+  
+  .qoute .image, .gif .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
