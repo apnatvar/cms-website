@@ -16,14 +16,13 @@
     box-sizing: border-box;
     overflow-x: hidden;
     scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none;  /* Internet Explorer and Edge */
     /* outline: 2px solid blue;    */
   }
-  ::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, and Opera */
+  /* ::-webkit-scrollbar {
+    display: none; 
     width: 0px;
     background: transparent; 
-  }
+  } */
   
   h1, h2, h3, .heading {
   font-family: var(--font-heading);
@@ -38,6 +37,10 @@
   body {
     line-height: 1.6;
     width: 100%;
+  }
+
+  section {
+    margin-bottom: 10vh;
   }
 
   main {

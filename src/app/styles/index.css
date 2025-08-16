@@ -260,25 +260,20 @@
 
   /* RIGHT: International Column */
   .map-and-international-section .international-column {
-    transform-origin: top left;
     flex: 1 1 50%;
-    display: flex;
-    flex-direction: column;
     padding: 1rem;
+    gap: 0.5rem;
+    max-height: 200vh;
   }
 
   /* International Image Boxes */
   .map-and-international-section .international-image-box {
     position: relative;
-    overflow: hidden;
-    margin-bottom: 1rem;
   }
 
   .map-and-international-section .international-image-box .int-image {
     width: 100%;
-    transition: transform 0.4s ease;
     border-radius: 8px;
-    object-fit: cover;
   }
 
   /* Hover overlay */
@@ -334,7 +329,22 @@
     font-size: 2rem;
     margin-top: 3rem;
   } */
+  @media (max-width: 1023px) {
+    .map-and-international-section .international-column {
+    display: block;
+    padding: 1rem;
+  }
+    .map-and-international-section .international-image-box {
+      width: 90vw;
+      height: auto;
+    }
 
+    .map-and-international-section .international-image-box .int-image {
+      width: 100%;
+      height: auto;
+      min-height: 50vh;
+    }
+  }
   /* Responsive adjustments */
   @media (max-width: 650px) {
     .map-and-international-section .map-and-international-wrapper {
@@ -402,15 +412,14 @@
     padding-bottom: 10px;
     text-align: center;
     background: var(--preferred-white);
+    margin-bottom: 30px;
   }
   
-  .trailer-section .section-heading {
-    font-size: 32px;
-    margin-bottom: 30px;
+  .trailer-section .heading {
+    margin-bottom: 20px;
     text-align: center;
   }
   
-  /* Filter Buttons */
   .trailer-section .filter-buttons {
     display: flex;
     justify-content: center;

@@ -81,7 +81,6 @@ export const LandingPage: GlobalConfig = {
         {
           name: 'highlightImages',
           type: 'array',
-          maxRows: 3,
           minRows: 3,
           fields: [
             { name: 'image', type: 'upload', relationTo: 'media' },
